@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorAccent_CrashReporter">#316796</color>
+    <color name="colorPrimaryDark_CrashReporter">#276CB7</color>
+    <color name="colorPrimary_CrashReporter">#303F9F</color>
+    <string name="cancel">CANCEL</string>
+    <string name="check_your_message_here">Check your crashes and exceptions here.</string>
+    <string name="crash_reporter">CrashReporter</string>
+    <string name="crashes">Crashes</string>
+    <string name="delete_confirmation_msg">Are you sure to delete all the crash logs</string>
+    <string name="exceptions">Exceptions</string>
+    <string name="notification_crash_report_title">Crash Reporter notifications</string>
+    <string name="ok">OK</string>
+    <string name="view_crash_report">View Crash Report</string>
+    <style name="CrashReporter.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_CrashReporter</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_CrashReporter</item>
+        <item name="colorAccent">@color/colorAccent_CrashReporter</item>
+    </style>
+</resources>

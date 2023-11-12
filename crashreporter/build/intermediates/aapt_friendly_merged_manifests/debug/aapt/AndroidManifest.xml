@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.balsikandar.crashreporter" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application android:supportsRtl="true" >
+        <provider
+            android:name="com.balsikandar.crashreporter.CrashReporterInitProvider"
+            android:authorities="dollar_openBracket_applicationId_closeBracket.CrashReporterInitProvider"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.balsikandar.crashreporter.ui.CrashReporterActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.balsikandar.android.task"
+            android:theme="@style/CrashReporter.Theme" />
+        <activity
+            android:name="com.balsikandar.crashreporter.ui.LogMessageActivity"
+            android:parentActivityName="com.balsikandar.crashreporter.ui.CrashReporterActivity"
+            android:theme="@style/CrashReporter.Theme" />
+    </application>
+
+</manifest>
