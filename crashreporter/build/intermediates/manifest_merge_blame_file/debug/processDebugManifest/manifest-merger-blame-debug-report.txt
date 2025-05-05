@@ -1,0 +1,41 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.balsikandar.crashreporter" >
+4
+5    <uses-sdk android:minSdkVersion="15" />
+6
+7    <application android:supportsRtl="true" >
+7-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:3:5-22:19
+7-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:4:9-35
+8        <provider
+8-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:6:9-10:40
+9            android:name="com.balsikandar.crashreporter.CrashReporterInitProvider"
+9-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:7:13-54
+10            android:authorities="${applicationId}.CrashReporterInitProvider"
+10-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:8:13-77
+11            android:enabled="true"
+11-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:9:13-35
+12            android:exported="false" />
+12-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:10:13-37
+13
+14        <activity
+14-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:12:9-16:58
+15            android:name="com.balsikandar.crashreporter.ui.CrashReporterActivity"
+15-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:13:13-53
+16            android:launchMode="singleTask"
+16-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:14:13-44
+17            android:taskAffinity="com.balsikandar.android.task"
+17-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:15:13-64
+18            android:theme="@style/CrashReporter.Theme" />
+18-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:16:13-55
+19        <activity
+19-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:18:9-21:58
+20            android:name="com.balsikandar.crashreporter.ui.LogMessageActivity"
+20-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:19:13-50
+21            android:parentActivityName="com.balsikandar.crashreporter.ui.CrashReporterActivity"
+21-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:20:13-67
+22            android:theme="@style/CrashReporter.Theme" />
+22-->C:\Users\prabhat\Desktop\AndroidStudioProjects\Textrecogination\crashreporter\src\main\AndroidManifest.xml:21:13-55
+23    </application>
+24
+25</manifest>

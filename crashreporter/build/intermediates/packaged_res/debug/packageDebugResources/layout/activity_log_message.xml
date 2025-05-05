@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     tools:context="com.balsikandar.crashreporter.ui.LogMessageActivity">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+             android:id="@+id/appbar">
+
+            <androidx.appcompat.widget.Toolbar
+                 android:layout_height="?attr/actionBarSize"
+                 android:layout_width="match_parent"
+                 android:background="#DD233AAD"
+                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                 android:id="@+id/toolbar" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <HorizontalScrollView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="10dp"
+                 android:textColor="#ff0000"
+                 android:textIsSelectable="true"
+                 android:id="@+id/logMessage" />
+
+        </HorizontalScrollView>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="10dp"
+             android:textColor="@color/black"
+             android:layout_marginTop="10dp"
+             android:textIsSelectable="true"
+             android:id="@+id/appInfo" />
+
+    </LinearLayout>
+
+</ScrollView>
