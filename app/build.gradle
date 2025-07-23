@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' version '1.9.10'
 }
 apply plugin: 'com.google.gms.google-services'
 android {
@@ -23,10 +24,14 @@ android {
     }
     
     compileOptions {
-		sourceCompatibility JavaVersion.VERSION_11
-		targetCompatibility JavaVersion.VERSION_11
-	}
-	
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+    
 }
 
 dependencies {
@@ -36,4 +41,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-ml-vision:15.0.0'
     implementation 'com.google.firebase:firebase-core:15.0.2'
     implementation("com.vanniktech:android-image-cropper:4.5.0")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
+    implementation "androidx.cardview:cardview:1.0.0"
 }
